@@ -38,10 +38,10 @@ class EditGame extends Component {
   onSubmit(values) {
     console.log("Updated values: ");
     console.log(values);
-
-    // this.props.editGameEntry(values, () => {
-    this.props.history.push(`/games/${this.props.game.id}`);
-    // });
+    values["id"] = this.props.game.id;
+    this.props.updateGameEntry(values, () => {
+      this.props.history.push(`/games/${this.props.game.id}`);
+    });
   }
 }
 

@@ -56,10 +56,6 @@ class GameForm extends Component {
   render() {
     console.log("GameForm props:", this.props);
 
-    const currentGame = this.props.id
-      ? this.props
-      : { name: "", desc: "", rating: 0, minPlayers: 0, maxPlayers: 0 };
-
     return (
       <div>
         <Field label="Name" name="name" component={this.textField} />
