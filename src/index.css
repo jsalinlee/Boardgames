@@ -1,5 +1,26 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+form a,
+form button {
+  margin-left: 15px;
+}
+
+.buttons {
+  display: inline;
+}
+
+label,
+.form-control {
+  margin-left: 15px;
+}
+
+.num_players {
+  display: inline-block;
+}
+
+.game_label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.show_game {
+  margin: 10px;
 }
